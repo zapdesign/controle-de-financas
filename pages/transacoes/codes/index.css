@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+* {margin: 0px; padding: 0px; font-family: 'Lexend', sans-serif; list-style: none;}
+
+body {
+    overflow: hidden;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: initial;
+
+    background: #F6EEFF;
+    
+}
+
+#logo{
+    margin-top: 50px;
+    width: 25px;
+    height: 25px;   
+}
+
+#novo{
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    background: none;
+    padding-top: 40px;
+    padding-left: 25px;
+    margin-bottom: -25px;
+    z-index: 1;
+}
+
+#novo button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#ultimas-transacoes{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 43px 0px 49px 25px;
+    gap: 30px;
+
+    border-radius: 19px 19px 0px 0px;
+    box-shadow: 0px 8px 41.1px 0px rgba(0, 0, 0, 0.07);
+    
+    background: white;
+    overflow: hidden;
+
+}
+
+#ultimas-transacoes #titulo-ultimas{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+}
+
+ul#criar-abaixo{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-bottom: 35px;
+}
+
+ul#criar-abaixo::-webkit-scrollbar{
+    width: 5px;
+}
+
+ul#criar-abaixo::-webkit-scrollbar-thumb {
+    background-color: #B880FF; 
+    border-radius: 6px;
+}
+
+ul#criar-abaixo::-webkit-scrollbar-track {
+    background-color: #F6EEFF; 
+}
+
+#ultimas-transacoes .transacoes-Entrada{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 25px 0px;
+    align-items: center;
+
+    background: linear-gradient(272deg, rgba(68, 96, 241, 0.06) 14.85%, rgba(255, 255, 255, 0.00) 45.71%);}
+
+#ultimas-transacoes .transacoes-Saida{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 30px 25px 0px;
+    align-items: center;
+
+    background: linear-gradient(272deg, rgba(241, 68, 68, 0.06) 14.85%, rgba(255, 255, 255, 0.00) 45.71%);
+}
+
+#ultimas-transacoes .fundo-transacao-01{
+    display: flex;
+    gap: 25px;
+}
+
+#ultimas-transacoes .fundo-transacao-02{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ultimas-transacoes .nome-transacao{
+    font-size: 18px;
+    font-weight: 600;
+    color: #1C1C1C;
+}
+
+#ultimas-transacoes .sub{
+    padding-top: 5px;
+
+    color: #696969;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#ultimas-transacoes .valor-transacao{
+    color: #0C0C0C;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+#ultimas-transacoes .icone-lix{
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+#ultimas-transacoes .icone-lix img{
+    width: 15px;
+    height: 15px;
+}
+
+/* Popup's */
+
+#popup-entrada{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.42);
+    z-index: 2;
+}
+
+.background-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    width: 100%;
+    margin: 0px 50px;
+    padding: 45px 25px;
+    border-radius: 19px;
+
+}
+
+#popup-entrada p{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#popup-entrada input, select{
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    background: #E9EFF6;
+
+    font-size: 15px;
+    color: #464646;
+    font-weight: 400;
+}
+
+select{
+    padding-right: 25px;
+}
+
+#popup-entrada #botao-adicionar{
+    border-radius: 10px;
+    background: #B880FF;
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    
+    color: white;
+}
+
+#popup-entrada #cancelar{
+    border: none;
+    background: none;
+    margin-top: -5px;
+    cursor: pointer;
+    
+    color: #464646;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Menu */
+
+#menu-navegador{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#menu-navegador .menu-background{
+    display: flex;
+    justify-content: center;
+    padding: 15px 35px;
+    gap: 50px;
+    border-radius: 20px;
+
+    background: white;
+    box-shadow: 0px -2.242px 28.927px 0px rgba(0, 0, 0, 0.15);
+}
+
+#menu-navegador button{
+    padding: 5px 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu-navegador #menu-ativo{
+    background: rgba(184, 128, 255, 0.13);
+    cursor:auto;
+}
