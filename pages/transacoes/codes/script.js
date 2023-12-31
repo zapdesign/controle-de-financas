@@ -50,7 +50,7 @@ function inserirTransacao(nome, valor, tipo, i){
         li.innerHTML = `
         <div class="transacoes-Entrada" id="transacao-${i}">
                     <div class="fundo-transacao-01">
-                        <img src="../../assets/img/icone padrão.png" alt="">
+                        <img src="../../assets/img/entrada padrão.png" alt="">
                         <div>
                             <p class="nome-transacao">${nome}</p>
                             <p class="sub">Compra</p>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhe seus gastos</title>
+    <link rel="stylesheet" href="./codes/style.css">
+    <link rel="stylesheet" href="../../assets/codes/menu.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <section id="body">
+
+        <img id="logo" src="../../assets/img/logo.png" alt="">
+
+        <h1>Acompanhe seus gastos</h1>
+
+        <div class="relatorios-graficos">
+                <div class="organizar-x">
+                    <div class="fundo-dados">
+                        <p class="header-dados">Valor recebido</p>
+
+                        <p class="rs">R$</p>
+                        <p class="valor-final" id="valor-recebido">0,00</p>
+                    </div>
+                    <div class="fundo-dados">
+                        <p class="header-dados">Valor gasto</p>
+
+                        <p class="rs">R$</p>
+                        <p class="valor-final" id="valor-gasto">0,00</p>
+                    </div>
+                    <div class="fundo-dados">
+                        <p class="header-dados">Valor restante</p>
+
+                        <p class="rs">R$</p>
+                        <p class="valor-final" id="valor-restante">0,00</p>
+                    </div>
+                </div>
+
+                <div class="sessao2">
+                    <div class="organizar-x">
+                        <div class="fundo-dados-sessao2">
+                            <p class="header-dados">Porcentagem de valor gasto</p>
+                            <div class="centrar-dado">
+                                <p class="valor-final-porcentagem" id="porcetagem-gasto">0</p>
+                                <p class="porcentagem">%</p>
+                            </div>
+                        </div>
+                        <div class="fundo-dados-grafico" id="grafico-roda">
+                            <p class="header-dados">Orçamento x Gasto</p>
+                            <div class="label">
+                                <p class="header-dados" id="ganho-label">Ganho</p>
+                                <p class="header-dados" id="gasto-label">Gasto</p>
+                            </div>
+
+                            
+                            <canvas id="meuGrafico"></canvas>
+
+                           
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+       
+
+        <div id="menu-navegador">
+            <div class="menu-background">
+                <a href="../../index.html"><button>
+                    <img src="../../assets/img/home.svg" alt="">
+                </button></a>
+                <a href="../transacoes/transacoes.html"><button >
+                    <img src="../../assets/img/transacoes.svg" alt="">
+                </button></a>
+                <button >
+                    <a href=""><img src="../../assets/img/categorias.svg" alt=""></a>
+                </button>
+                <button id="menu-ativo">
+                    <a ><img src="../../assets/img/relatorios.svg" alt=""></a>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="./codes/script.js"></script>
+    
+</body>
+</html>
