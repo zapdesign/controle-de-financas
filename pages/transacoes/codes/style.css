@@ -91,7 +91,7 @@ ul#criar-abaixo::-webkit-scrollbar-track {
 
     background: linear-gradient(272deg, rgba(68, 96, 241, 0.06) 14.85%, rgba(255, 255, 255, 0.00) 45.71%);}
 
-#ultimas-transacoes .transacoes-Saida{
+#ultimas-transacoes .transacoes-Saída{
     display: flex;
     justify-content: space-between;
     padding: 25px 30px 25px 0px;
@@ -156,6 +156,7 @@ ul#criar-abaixo::-webkit-scrollbar-track {
     z-index: 2;
 }
 
+
 .background-popup{
     display: flex;
     flex-direction: column;
@@ -197,8 +198,19 @@ select{
     background: #B880FF;
     box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    
+    justify-content: center;
     color: white;
+    display: none;
+}
+
+#popup-entrada #botao-alterar{
+    border-radius: 10px;
+    background: #B880FF;
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    justify-content: center;
+    color: white;
+    display: none;
 }
 
 #popup-entrada #cancelar{

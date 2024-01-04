@@ -13,7 +13,7 @@
         <img id="logo" src="../../assets/img/logo.png" alt="">
 
         <div id="novo">
-            <button onclick="popupEntrada()"><img  src="../../assets/img/adicionar novo.svg" alt=""></button>
+            <button onclick="popupEntrada('adicionar','','', '')"><img  src="../../assets/img/adicionar novo.svg" alt=""></button>
         </div>
 
         <div id="ultimas-transacoes">
@@ -26,18 +26,7 @@
 
 
         <div id="popup-entrada">
-            <div class="background-popup">
-                <p>Adicionar Valor</p>
-                <input id="input-nome" type="text" placeholder="Insira um valor">
-                <input id="input-valor" type="number" placeholder="Insira um valor">
-                <select name="input-tipo" id="input-tipo">
-                    <option>Entrada</option>
-                    <option>Saída</option>
-                </select>
-                <input type="hidden" id="input-tipo" value="Entrada"></input>
-                <input onclick="adicionarTransacao()" type="button" value="Adicionar Transação" id="botao-adicionar">
-                <button onclick="fecharPopup()" id="cancelar">Cancelar</button>
-            </div>   
+
         </div>
 
         <div id="menu-navegador">

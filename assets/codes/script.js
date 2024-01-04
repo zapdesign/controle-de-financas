@@ -14,7 +14,7 @@ function carregar(){
 
     fluxo = JSON.parse(localStorage.getItem('transacoes')) || [];  
     if(fluxo.length == 0) {
-        document.getElementById('ultima-transacao').innerText = 'Suas transações apareceram aqui...'
+        document.getElementById('ultima-transacao').innerText = 'Suas transações aparecerão aqui...'
         ul.style.display = "none"
     }
     fluxo.forEach((transacao, i) => {
@@ -26,11 +26,14 @@ function carregar(){
 function inserirTransacao(nome, valor, tipo, i){
     const li = document.createElement('li')
 
+    nome = nome.substring(0,13);
+    valor = valor.substring(0,7);
+
     if(i < 3){
         li.innerHTML = `
         <div class="transacoes" id="transacao-${i}">
                     <div class="fundo-transacao">
-                        <img src="assets/img/icone padrão.png" alt="">
+                        <img src="assets/img/${tipo}.png"" alt="">
                         <div>
                             <p id="nome-transacao">${nome}</p>
                             <p id="sub">Compra</p>
