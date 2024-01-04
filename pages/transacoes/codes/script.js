@@ -56,7 +56,7 @@ function carregar(){
 
 }
 
-function inserirTransacao(nome, valor, tipo, i, categoria){
+function inserirTransacao(nome, valor, tipo, i){
     const li = document.createElement('li')
 
     nome = nome.substring(0,13);
@@ -71,7 +71,7 @@ function inserirTransacao(nome, valor, tipo, i, categoria){
                             <p class="sub">Compra</p>
                         </div>
                         <div>
-                        <button onclick="popupEntrada('alterar', ${i}, ${nome}, ${valor})" class="icone-lix"> <img src="../../assets/img/caneta.svg"></button>
+                        <button onclick="popupEntrada('alterar', ${i}, '${nome}', '${valor}')" class="icone-lix"> <img src="../../assets/img/caneta.svg"></button>
                         </div>
                     </div>
                     <div class="fundo-transacao-02">
